@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form1</title>
+	</head>
+	<style>
+		#form1{
+			 border: 3px solid ;
+			 width:870px;
+			 height:385px;
+		}
+		input#savebutton{
+				width:120px;
+				height:45px;
+				padding:2px 2px;
+				background:#32CC99;
+				border-radius: 8px;
+				color:white;
+				font-family:Verdana;
+				font-size:14px;
+				margin-left: 300px;
+				margin-top: 45px;
+				
+			}
+			input#cancelbutton{
+				width:120px;
+				height:45px;
+				padding:2px 2px;
+				background:#BDBDBD;
+				border-radius: 8px;
+				color:white;
+				font-family:Verdana;
+				font-size:14px;
+				margin-left: 11px;
+			}
+		p.one{
+			font-family:Verdana;
+			font-size:18px;
+			background:#EBEBEB;
+			height:50px;
+			margin-top: 0px;
+		}
+		label.addcss{
+			position:relative;
+			top:10px;
+			left:11px;
+		}
+		label.textcss{
+			margin:40px;
+			height:20px;
+			margin-left:30px;
+			
+		}
+		input.inputcss{
+			position:absolute;
+			left:100px;
+			height:20px;
+			margin-left: 150px;
+			border-radius:3px;
+		}
+		textarea.areacss{
+			position:absolute;
+			left:100px;
+			margin-left: 150px;
+			border-radius:3px;
+		}
+		select.selectcss{
+			size="100";
+			position:absolute;
+			left:100px;
+			height:20px;
+			margin-left: 150px;
+			border-radius:3px;
+		}
+	</style>
+	<body>
+		
+		<div id="form1">
+			<p class="one"><label class="addcss">Add Risk</label></p>
+		
+			<label class="textcss">Subject:</label>
+				<input type="text" class="inputcss" name="Subject" size="80" required></br></br>
+			
+			<label class="textcss">Customer:</label>
+				<input type="search" class="inputcss" style="height:25px;" name="customer" size="50"></br></br>
+			
+			<label class="textcss">Owner:</label>
+				<input type="text" class="inputcss" name="owner" placeholder="Type to search" size="50" style="background-color:#F2F2F2" ></br></br>
+			<label class="textcss">Reason:</label>
+				<select name="reason" class="selectcss" style="height:20px;" size="50" >
+					<option value="Others-Uncategorized-1">Others-Uncategorized-1</option>
+					<option value="Others-Uncategorized-2">Others-Uncategorized-2</option>
+					<option value="Others-Uncategorized-3">Others-Uncategorized-3</option>
+				</select></br></br>
+			<label class="textcss">Due Date:</label>
+				<input type="date" class="inputcss" name="date"></br></br>
+			<label class="textcss">Comments:</label>
+				<textarea rows="4" class="areacss" cols="81" name="Comments"></textarea></br></br>
+				<div>	
+				<input id="savebutton" type="submit" value="Save"/>
+				<input id="cancelbutton" type="submit" value="Cancel"/>
+				</div>
+		</div>
+	</body>
+</html>
